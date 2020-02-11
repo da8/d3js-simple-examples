@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Document</title>
+</head>
+
+<body>
+    <script type='text/javascript' src='d3.v5.15.0/d3.js'></script>
+
+    <script type='text/javascript'>
+        // Variables
+        var number = 5;
+        var value = 12.3467;
+        var active = true;
+        var text = 'Crystal clear';
+
+        // Arrays
+        var numbers = [5, 10, 15, 20, 25];
+        var percentages = [0.55, 0.32, 0.91];
+        var names = ['Ernie', 'Bert', 'Oscar'];
+
+        for (var i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+
+        // Objects
+        var fruit = {
+            kind: 'grape',
+            color: 'red',
+            quantity: 12,
+            tasty: true
+        };
+
+        console.log(fruit.kind);
+        console.log(fruit.color);
+        console.log(fruit.quantity);
+        console.log(fruit.tasty);
+
+        // Objects + Arrays
+        var fruits = [
+            {
+                kind: 'grape',
+                color: 'red',
+                quantity: 12,
+                tasty: true
+            },
+            {
+                kind: 'kiwi',
+                color: 'brown',
+                quantity: 98,
+                tasty: true
+            },
+            {
+                kind: 'banana',
+                color: 'yellow',
+                quantity: 0,
+                tasty: true
+            }
+        ];
+
+        for (var i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        // JSON
+        var jsonFruit = {
+            'kind': 'grape',
+            'color': 'red',
+            'quantity': 12,
+            'tasty': true
+        };
+
+        // Object vs JSON
+        var objectBook = {
+            title: 'The Old Man and the Sea',
+            author: 'Ernest Hemingway'
+        };
+
+        console.log(objectBook.title);
+        console.log(objectBook.author);
+
+        var jsonBook = {
+            'title': 'Animal Farm',
+            'author': 'George Orwell'
+        };
+
+        console.log(jsonBook['title']);
+        console.log(jsonBook['author']);
+
+        var person = '{ "firstName":"John", "name":"Wick", "age":40, "city":"New York"}';
+
+        var objectPerson = JSON.parse(person);
+
+        console.log(objectPerson.firstName);
+        console.log(objectPerson.name);
+        console.log(objectPerson.age);
+        console.log(objectPerson.city);
+
+        // GeoJSON   
+        var geodata = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [150.1282427, -24.471803]
+                    },
+                    "properties": {
+                        "type": "town"
+                    }
+                }
+            ]
+        };
+
+        console.log(geodata);
+    </script>
+</body>
+
+</html>
