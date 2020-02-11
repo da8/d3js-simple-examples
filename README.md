@@ -2,7 +2,7 @@
 Playing around with d3js in simple samples  
 <br/>
 Based on https://alignedleft.com/tutorials.  
-  
+
 index-001.html  
 Simplest example using d3js  
 Based on https://alignedleft.com/tutorials/d3/setup.  
